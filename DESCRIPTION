@@ -1,0 +1,35 @@
+Package: aradR
+Type: Package
+Title: Modern R Client and Toolkit for the Czech National Bank ARAD API
+Version: 0.2.0
+Authors@R: c(
+    person("Simona", "Malovana", email = "simona.malovana@gmail.com", role = c("aut", "cre")),
+    person("Petr", "Bouchal", email = "pbouchal@gmail.com", role = "ctb",
+           comment = c(ORCID = "0000-0002-0471-716X"))
+  )
+Description: Provides a reliability-first interface to the public Czech National Bank
+    ARAD API for discovering indicators, browsing human-readable metadata,
+    retrieving and validating time series, working with dimensions and
+    snapshots, reshaping data, and building reproducible data workflows. The
+    package is designed for robust handling of long requests, parsing
+    diagnostics, missing values, retries, caching, and automated tests.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+Depends: R (>= 4.1.0)
+RoxygenNote: 7.3.2
+Imports: curl, httr2 (>= 0.2.2), readr, tibble
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Config/Needs/website: r-lib/pkgdown
+URL: https://simonamalovana.com/aradR/,
+        https://github.com/simonamalovana/aradR
+BugReports: https://github.com/simonamalovana/aradR/issues
+NeedsCompilation: no
+Packaged: 2026-10-04 20:35:53 UTC; runner
+Author: Simona Malovana [aut, cre],
+  Petr Bouchal [ctb] (ORCID: <https://orcid.org/0000-0002-0471-716X>)
+Maintainer: Simona Malovana <simona.malovana@gmail.com>
+Repository: CRAN
+Date/Publication: 2026-10-15 16:50:02 UTC
